@@ -60,7 +60,7 @@ pages/
 
 Partials are referenced by their relative path, minus the file extension. After loading the above hierarchy of templates and partials, to include `header.mustache` from the page `contact-info.mustache`, you would use the following syntax:
 
-```mst
+```mustache
 {{> 'partials/common/header' }}
 ```
 
@@ -95,7 +95,7 @@ module.exports = function () {
 
 This function is now available in your templates, to be used as follows. The function receives the current context, in the following example it receives a `product` object with properties `name` and `price`.
 
-```mst
+```mustache
 {{#products}}
   <li>{{renderProduct}}</li>
 {{/products}}
