@@ -1,6 +1,6 @@
 {
   "name": "dadi-web-mustachejs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Mustache.js interface for DADI Web",
   "main": "index.js",
   "scripts": {
