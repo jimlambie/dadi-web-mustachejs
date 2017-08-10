@@ -53,12 +53,12 @@ Partials must be registered with Mustache before they can be used in a template.
 pages/
 |_ partials/
 |_ |_ common/
-|_ |_ |_ header.mst
-|_ contact-info.mst
-|_ home.mst
+|_ |_ |_ header.mustache
+|_ contact-info.mustache
+|_ home.mustache
 ```
 
-Partials are referenced by their relative path, minus the file extension. After loading the above hierarchy of templates and partials, to include `header.mst` from the page `contact-info.mst`, you would use the following syntax:
+Partials are referenced by their relative path, minus the file extension. After loading the above hierarchy of templates and partials, to include `header.mustache` from the page `contact-info.mustache`, you would use the following syntax:
 
 ```mst
 {{> 'partials/common/header' }}

@@ -11,12 +11,12 @@ const ENGINE = {
       }
     }
   },
-  extensions: ['.mst'],
+  extensions: ['.mustache'],
   handle: 'mustache'
 }
 
 module.exports = () => {
-  const debug = require('debug')('web:templates:mst')
+  const debug = require('debug')('web:templates:mustache')
   const libHelpers = require(path.join(__dirname, 'lib/helpers'))
   const mustache = require('mustache')
   const requireDir = require('require-dir')

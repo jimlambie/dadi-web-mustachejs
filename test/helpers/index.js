@@ -9,13 +9,13 @@ const PATHS = {
 }
 
 const ADDITIONAL_TEMPLATES = {
-  'partials/footer': path.join(PATHS.workspace, 'pages/partials/footer.mst'),
-  'partials/header': path.join(PATHS.workspace, 'pages/partials/header.mst')
+  'partials/footer': path.join(PATHS.workspace, 'pages/partials/footer.mustache'),
+  'partials/header': path.join(PATHS.workspace, 'pages/partials/header.mustache')
 }
 
 const PAGES = {
-  products: fs.readFileSync(path.join(PATHS.workspace, 'pages/products.mst'), 'utf8'),
-  'products-with-helpers': fs.readFileSync(path.join(PATHS.workspace, 'pages/products-with-helpers.mst'), 'utf8')
+  products: fs.readFileSync(path.join(PATHS.workspace, 'pages/products.mustache'), 'utf8'),
+  'products-with-helpers': fs.readFileSync(path.join(PATHS.workspace, 'pages/products-with-helpers.mustache'), 'utf8')
 }
 
 module.exports.additionalTemplates = ADDITIONAL_TEMPLATES

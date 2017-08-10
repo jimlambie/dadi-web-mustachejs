@@ -42,8 +42,8 @@ describe('Mustache.js interface', function () {
     done()
   })
 
-  it('should declare .mst as a supported extension', done => {
-    factory.metadata.extensions.indexOf('.mst').should.not.equal(-1)
+  it('should declare .mustache as a supported extension', done => {
+    factory.metadata.extensions.indexOf('.mustache').should.not.equal(-1)
 
     done()
   })
